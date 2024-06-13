@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  for item in messages 
+    p Message by: #{item.user}, time: #{item.added}
+    p=item.text
